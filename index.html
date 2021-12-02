@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://pickatwu.github.io/rb7/asset/icon.png">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" href="asset/bulma.css">
+<link rel="stylesheet" href="https://pickatwu.github.io/bulma/bulma.css">
+<title>rb7</title>
+<style> 
+
+::-webkit-scrollbar {
+width: 8px;
+height: 5px;
+
+}
+::-webkit-scrollbar-corner {
+background: none;
+}
+::-webkit-scrollbar-thumb {
+
+background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+background-color: #000000;
+
+}
+
+
+html {
+scroll-behavior: smooth;
+background-color: #363636;
+}
+
+body {
+margin: 0px;
+
+font-family: 'Montserrat';
+
+}
+
+
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1s;
+animation-name: fade;
+animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: 0} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: 0} 
+to {opacity: 1}
+}
+
+div {
+  -webkit-animation-name: fade;
+-webkit-animation-duration: 1s;
+animation-name: fade;
+animation-duration: 1s;
+}
+
+a:hover {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1s;
+animation-name: fade;
+animation-duration: 1s;
+}
+
+
+article, div {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1s;
+animation-name: fade;
+animation-duration: 1s;
+}
+
+.top {
+  top:0px;
+}
+
+.float {
+  left:0px;
+  right:0px;
+  z-index: 1;
+  position: fixed;
+}
+
+.bottom {
+  bottom: 0px;
+right: 0px;
+left: 0px;
+}
+
+
+
+.shadow {
+  box-shadow: 0 -32px 16 #000000;
+}
+
+.s {
+ letter-spacing: 5px;
+}
+
+.nav {
+  border-top-left-radius:50px;
+  border-top-right-radius:50px;
+  padding-bottom: 100%;
+  margin: 10px;
+  margin-bottom: 0px;
+top: 0px;
+right: 0px;
+left: 0px;
+animation-name: dnav;
+animation-duration: 3s;
+}
+
+@keyframes dnav {
+  from {
+    margin-top: 2in;
+  } 
+top {
+  margin-top: auto;}
+}
+
+#heading {
+  margin: 10px;
+  margin-bottom: 0px;
+  animation-name: head;
+animation-duration: 3s;
+}
+
+@keyframes head {
+from {padding-bottom: 40%;} 
+to {padding-bottom: 0;}
+}
+
+#headingpc {
+  margin: 10px;
+  margin-bottom: 0px;
+  animation-name: headpc;
+animation-duration: 3s;
+}
+
+@keyframes headpc {
+from {padding-top: -40px; padding-bottom: -40px} 
+to {padding-top: 0; padding-bottom: 0;}
+}
+
+.menu {
+  overflow-x: scroll;
+}
+
+.navclose {
+animation-name: close;
+animation-duration: 1s;
+}
+
+
+@keyframes close {
+from {opacity: 0} 
+to {opacity: 1}
+}
+
+
+</style>
+ 
+</head>
+<body>
+
+  <!--Mobile UI-->
+<div class="is-hidden-desktop-only is-hidden-widescreen-only">
+
+  <!--head-->
+  <div class="hero top float is-asmall is-danger">
+   <div class="hero-body">
+       <nav class="level is-mobile level-item">
+         <p class="subtitle caps">rb7</p>
+       </nav>
+   </div>
+  </div>
+
+   <!--headbase-->
+   <div class="hero is-asmall is-danger mb-6">
+    <div class="hero-body">
+        <nav class="level is-mobile level-item">
+          <p class="subtitle caps">rb7</p>
+        </nav>
+    </div>
+   </div>
+
+
+  <!--bottom-->
+  <div class="hero bottom float is-bsmall is-danger">
+    <div class="hero-body">
+
+      <script>
+
+        function a1() {
+          var element = document.getElementById("a1")
+          element.classList.remove("is-hidden");
+
+          var element = document.getElementById("a2")
+          element.classList.add("is-hidden");
+
+          var element = document.getElementById("a3")
+          element.classList.add("is-hidden");
+        }
+
+        function a2() {
+          var element = document.getElementById("a1")
+          element.classList.add("is-hidden");
+
+          var element = document.getElementById("a2")
+          element.classList.remove("is-hidden");
+
+          var element = document.getElementById("a3")
+          element.classList.add("is-hidden");
+        }
+
+        function a3() {
+          var element = document.getElementById("a1")
+          element.classList.add("is-hidden");
+
+          var element = document.getElementById("a2")
+          element.classList.add("is-hidden");
+
+          var element = document.getElementById("a3")
+          element.classList.remove("is-hidden");
+        }
+
+      </script>
+
+        <nav class="level is-mobile level-item">
+         
+          <a onclick="a1()" class="level-item button is-outlined is-danger">
+            <img class="image is-32x32" src="asset/2.png">
+          </a>
+          
+          <a onclick="a2()" class="level-item button is-outlined is-danger">
+            <img class="image is-32x32" src="asset/1.png">
+          </a>
+
+          <a onclick="a3()" class="level-item button is-outlined is-danger">
+            <img class="image is-32x32" src="asset/3.png">
+          </a>
+
+        </nav>
+    </div>
+   </div>
+
+       </div>
+
+         <!--Pc UI-->
+         <div class="is-hidden-mobile is-hidden-touch is-hidden-tablet-only">
+
+          <!--head-->
+          <div class="hero top float is-small is-danger">
+           <div class="hero-body">
+              
+                 <p class="subtitle caps">rb7</p>
+               
+        
+                <a onclick="a1()" class="button is-outlined is-danger">
+                  <figure class="image is-24x24">
+                    <img class="is-rounded" src="asset/2.png">
+                  </figure>
+                </a>
+                
+                <a onclick="a2()" class="button is-outlined is-danger">
+                  <figure class="image is-24x24">
+                    <img class="is-rounded" src="asset/1.png">
+                  </figure>
+                </a>
+        
+                <a onclick="a3()" class="button is-outlined is-danger">
+                  <figure class="image is-24x24">
+                    <img class="is-rounded" src="asset/3.png">
+                  </figure>
+                </a>
+        
+              
+           </div>
+          </div>
+        
+           <!--headbase-->
+           <div class="hero is-asmall is-danger">
+            <div class="hero-body">
+             
+                  <p class="subtitle caps">rb7</p>
+           
+            </div>
+           </div>
+        
+               </div>
+        
+
+         <!--maina1-->
+   <div id="a1" class="hero is-medium is-danger">
+    <div class="hero-body">
+        <nav class="level is-mobile">
+          <div class="level-item">
+          <p class="subtitle caps">official</p>
+        </div>
+        </nav>
+        <nav class="level is-mobile">
+          <div class="level-item">
+          <p class=" subtitle caps">web app</p>
+          </div>
+        </nav>
+    </div>
+   </div>
+
+     <!--maina2-->
+      <div id="a2" class="hero is-hidden is-medium is-danger">
+        <div class="hero-body">
+            <nav class="level is-mobile">
+              <p class="level-item  subtitle caps">Socials</p>
+            </nav>
+            <nav class="level is-mobile">
+              <a href="https://www.youtube.com/channel/UCOW53bDjZNH3z7vY6s5Ej7w"
+              class="level-item button is-outlined is-danger">
+                <img class="image is-32x32" src="asset/yt.png">
+              </a>
+              <a href="https://twitter.com/redbuilder7Vod?s=09"
+              class="level-item button is-outlined is-danger">
+                <img class="image is-32x32" src="asset/tw.png">
+              </a>
+            </nav>
+
+            <nav class="level is-mobile">
+              <a href="https://discord.gg/x8XknN9QjG"
+              class="level-item button is-outlined is-danger">
+                <img class="image is-32x32" src="asset/dc.png">
+              </a>
+            </nav>
+        </div>
+       </div>
+
+         <!--maina3-->
+      <div id="a3" class="hero is-hidden is-medium is-danger">
+        <div class="hero-body">
+
+              <p class=" subtitle caps">Info</p>
+            
+            <p class="mb-1">He is known for his custom minecraft shoutout style</p>
+            <p class="mb-3">like Dream Shoutout #98</p>
+            <p class="mb-1"> He is known for his Minecraft Mob Vs Mob Videos</p>
+            <p class="mb-1"> Rb7 is a Youtuber and Streamer</p>
+            <p class="mb-1">as of now Dec 2 2021 he have 1k+ sub</p>
+        </div>
+       </div>
+</body>
+</html>
